@@ -1,1 +1,1 @@
-# Medical-research-01--EEG-data-classification
+# Medical Data Research Project-01--EEG-Data
