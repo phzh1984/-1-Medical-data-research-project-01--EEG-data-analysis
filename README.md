@@ -4,7 +4,9 @@ Problem: Tinnitus is a subjective symptom or feeling; there is still a lack of a
 
 This project aims to use machine learning algorithms to classify tinnitus data, select the best classifier, and apply it in the clinical detection of tinnitus. This study would help doctors improve the efficiency of tinnitus detection so that tinnitus patients could get faster and more effective treatment in the later stages.
 
-The goal of the tinnitus data analysis is to do a binary classification of whether a person is tinnitus or healthy based on their EEG data. During the experiment, different machine learning algorithms are used, and an optimal algorithm is selected for future classification prediction. The experimental steps are as follows：
+The goal of the tinnitus data analysis is to do a binary classification of whether a person is tinnitus or healthy based on their EEG data. During the experiment, different machine learning algorithms are used, and an optimal algorithm is selected for future classification prediction. For more details please refer to the uploaded PDF version of the project presentation slides.
+
+The summary experimental steps are as follows：
 
 1. The original data is the raw EEG data that includes the EEG data of 33 tinnitus patients and 47 non-tinnitus patients. Python-MNE package is first used to extract and integrate the original data, including exploratory analysis and visualization (PCA and TSNE). The EEG connectivity data (correlation between two brain areas) is the final raw data used to do this binary classification in Julia.
  
@@ -21,4 +23,4 @@ The goal of the tinnitus data analysis is to do a binary classification of wheth
 
 I utilized Python to preprocess raw data, including data cleaning and integration. I prepared the training and testing datasets and selected and extracted features. To perform exploratory data analysis on the selected features, I employed Machine learning algorithms, including Logistic Regression, KNN, Decision Tree, SVM, and Random Forest, using Julia to design and implement algorithmic models. I conducted algorithm model optimization, parameter selection, model evaluation, and data classification prediction.
 
-For more details please refer to the PDF version of the project presentation slides.
+
