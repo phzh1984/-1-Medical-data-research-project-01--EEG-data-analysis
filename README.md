@@ -1,4 +1,4 @@
-# Medical Data Research Project-01--EEG-Data
+# Medical Data Research Project EEG Data
 
 
 Problem: Tinnitus is a subjective symptom or feeling; there is still a lack of an objective method to diagnose and detect tinnitus symptoms.
