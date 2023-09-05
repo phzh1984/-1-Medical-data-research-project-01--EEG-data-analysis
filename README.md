@@ -1,7 +1,8 @@
 # Medical Data Research Project: Tinnitus Data Classification Prediction
 
 
-Problem: Tinnitus is a subjective symptom or feeling; there is still a lack of an objective method to diagnose and detect tinnitus symptoms.
+ Tinnitus is a subjective symptom or feeling; there is still a lack of an objective method to diagnose and detect tinnitus symptoms.
+
 
 This project aims to use machine learning algorithms to classify tinnitus data, select the best classifier, and apply it in the clinical detection of tinnitus. This study would help doctors improve the efficiency of tinnitus detection so that tinnitus patients could get faster and more effective treatment in the later stages.
 
