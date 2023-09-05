@@ -1,4 +1,4 @@
-# Medical Data Research Project EEG Data
+# Medical Data Research Project: Tinnitus Data Classification Prediction
 
 
 Problem: Tinnitus is a subjective symptom or feeling; there is still a lack of an objective method to diagnose and detect tinnitus symptoms.
