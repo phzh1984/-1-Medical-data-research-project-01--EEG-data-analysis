@@ -1,31 +1,38 @@
 # Medical Data Research Project: Tinnitus Data Classification Prediction
 
+Project Overview
 
- Tinnitus is a subjective symptom or feeling; there is still a lack of an objective method to diagnose and detect tinnitus symptoms.
+This project aims to address the challenge of diagnosing tinnitus, a subjective symptom, using machine learning algorithms. The goal is to classify tinnitus data and select the best classifier to assist in the clinical detection of tinnitus. By improving the efficiency of tinnitus detection, this research can contribute to faster and more effective treatment for tinnitus patients.
 
+Dataset Information
 
-This project aims to use machine learning algorithms to classify tinnitus data, select the best classifier, and apply it in the clinical detection of tinnitus. This study would help doctors improve the efficiency of tinnitus detection so that tinnitus patients could get faster and more effective treatment in the later stages.
+The project involves binary classification of individuals as either tinnitus or healthy based on their EEG (Electroencephalogram) data. The dataset comprises raw EEG data from 33 tinnitus patients and 47 non-tinnitus patients. The Python-MNE package is used to extract and preprocess the raw EEG data, which includes exploratory analysis and visualization techniques such as PCA (Principal Component Analysis) and t-SNE (t-distributed Stochastic Neighbor Embedding). The final dataset used for binary classification is EEG connectivity data, representing the correlation between different brain areas.
 
-The goal of the tinnitus data analysis is to do a binary classification of whether a person is tinnitus or healthy based on their EEG data. During the experiment, different machine learning algorithms are used, and an optimal algorithm is selected for future classification prediction. For more details please refer to the uploaded PDF version of the project presentation slides.
+Project Workflow
 
-The summary experimental steps are as follows：
+The project follows these key steps:
 
-1. The original data is the raw EEG data that includes the EEG data of 33 tinnitus patients and 47 non-tinnitus patients. Python-MNE package is first used to extract and integrate the original data, including exploratory analysis and visualization (PCA and TSNE). The EEG connectivity data (correlation between two brain areas) is the final raw data used to do this binary classification in Julia.
+Data Preprocessing: Raw EEG data is processed, cleaned, and integrated using Python, including feature extraction and data exploration techniques like PCA and t-SNE.
+
+Data Splitting: The dataset is divided into a training set and a testing dataset. Attention is given to balancing the training set to avoid classifier bias.
+
+Classification and Prediction: Five different machine learning algorithms, including Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Support Vector Machine (SVM), and Random Forest, are employed to classify and predict tinnitus cases using the balanced dataset with all features (325 dimensions).
+
+Dimension Reduction: PCA is used to reduce the dimensionality of the data to 200, 150, 100, 50, and 20 dimensions, respectively. Classification is performed using the five algorithms on the reduced-dimension data.
+
+Feature Importance: Important features are extracted using a feature importance process in Python. Features of 200, 150, 100, 50, and 20 are selected, and classification is carried out using the five different machine learning algorithms.
+
+Optimal Algorithm Selection: Based on classification prediction accuracy on the testing data, the optimal machine learning algorithm is identified. SVM is found to have the highest average accuracy rate of 92%, making it the best classifier for this experiment.
+
+The project includes:
+
+Julia code segments showcasing the algorithmic models used in the project.
+
+A section of the raw tinnitus patient dataset for reference.
+
+Presentation slides providing a comprehensive overview of the research, including methodologies, results, and findings.
  
-2. Split the raw data into a training set and a testing dataset, notice the training set was imbalanced based on the classification, so need to balance the training set as a classifier built based on an imbalanced training set may just classify any dataset to the majority votes in the training dataset.
- 
-3. Balanced data with all the features (325 dimensions) were classified and predicted using five different machine learning algorithms, including Logistic regression, KNN, Decision tree, SVM, and Random Forest.
-   
-4. Carry out dimension reduction on the balanced data and use PCA to reduce 325 dimensions to 200, 150, 100, 50, and 20 respectively, and then carry out classification by using the five algorithms on the dimension reduction data respectively.
-   
-5. Use the feature importance process in Python to extract the important features, select important features of 200, 150, 100, 50, and 20 respectively, and then use five different machine learning algorithms to do classification respectively.
-    
-6. Finally, find the optimal machine learning algorithm based on the classification prediction accuracy rate on the testing data. I found SVM had the best accuracy rate; the average accuracy is 92%. Logistic Regression, KNN, Decision Tree, and Random Forest achieved an average accuracy of 78%, 82%, 68%, and 69%, respectively. The SVM classifier should be selected as the best classifier in this experiment as it had the highest classification accuracy rate and lowest number of features.
 
-
-In summary. I utilized Python to preprocess raw data, including data cleaning and integration. I prepared the training and testing datasets and selected and extracted features. To perform exploratory data analysis on the selected features, I employed Machine learning algorithms, including Logistic Regression, KNN, Decision Tree, SVM, and Random Forest, using Julia to design and implement algorithmic models. I finally conducted algorithm model optimization, parameter selection, model evaluation, and data classification prediction.
-
-（In the uploaded files, I have showcased a portion of Julia's programming language code used for project experiments, presented a section of the tinnitus patient raw dataset, and also displayed presentation slides used in the project report. These slides provide a comprehensive demonstration of my research and problem-solving abilities.）
 
 
 
