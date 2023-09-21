@@ -14,7 +14,7 @@ The project follows these key steps:
 
 Data Preprocessing: Raw EEG data is processed, cleaned, and integrated using Python, including feature extraction and data exploration techniques like PCA and t-SNE.
 
-Data Splitting: The dataset is divided into a training set and a testing dataset. Attention is given to balancing the training set to avoid classifier bias.
+Data Splitting: The dataset is divided into a training dataset and a testing dataset. Attention is given to balancing the training set to avoid classifier bias.
 
 Classification and Prediction: Five different machine learning algorithms, including Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Support Vector Machine (SVM), and Random Forest, are employed to classify and predict tinnitus cases using the balanced dataset with all features (325 dimensions).
 
