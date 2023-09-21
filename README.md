@@ -24,14 +24,15 @@ Feature Importance: Important features are extracted using a feature importance 
 
 Optimal Algorithm Selection: Based on classification prediction accuracy on the testing data, the optimal machine learning algorithm is identified. SVM is found to have the highest average accuracy rate of 92%, making it the best classifier for this experiment.
 
-The project includes:
+The documents I have shown for this project include:
 
-Julia code segments showcasing the algorithmic models used in the project.
+1, Presentation slides (PDF version) provide a comprehensive overview of the research, including methodologies, results, and findings.
 
-A section of the raw tinnitus patient dataset for reference.
+2, Julia code segments showcasing the algorithmic models used in the project.
 
-Presentation slides providing a comprehensive overview of the research, including methodologies, results, and findings.
- 
+3, A section of the raw tinnitus patient dataset for reference.
+
+
 
 
 
